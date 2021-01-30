@@ -101,6 +101,7 @@
 }
 .about-iphone img{ 
     margin-top: 30px;
+    max-width: 80%;
 }
 .why-choose {
     padding-bottom: 30px;
@@ -146,6 +147,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #fff;
 }
 .team-overlay{
@@ -192,16 +194,150 @@
 }
 .service-left-box,.service-right-box{
     margin-bottom: 20px;
+    position: relative;
+    padding-left: 70px;
 }
 .service-left-box span,.service-right-box span{
+    position: absolute;
+    left: 0;
+    top: 0;
     font-size: 40px;
     color: rgb(31, 134, 197);
-    margin: 10px;
 }
 .service-left-box h2,.service-right-box h2{
-    font-weight: 450;
+    font-size: 26px;
+    font-weight: 600;
 }
 .service-left-box p, .service-right-box p{
     font-weight: 400;
     font-size: 16px;
+}
+.service-iphone img{
+    height: 500px;
+}
+
+/* Counter Section */
+.counter{
+    background: url('../images/counter-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+.counter-overlay{
+    padding: 6rem 0;
+    background: rgba(0,0,0,0.6);
+}
+.counter-item i{
+    font-size: 46px;
+    color: rgb(18, 156, 243);
+    margin-bottom: 20px;
+    transition: all ease 0.5s;
+}
+.counter-item h3{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.counter-item p{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Contact Us Section */
+.form{
+    margin-top: 40px;
+}
+.contact-us-form .heading::after{
+    left: 80px;
+}
+.left-form input,
+.left-form input:focus,
+.left-form input:visited{
+    margin-bottom: 24px;
+    padding: 23px 16px;
+    font-size: 18px;
+    opacity: 0.4;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgb(31, 134, 197);
+    box-shadow: none;
+    transition: all ease 0.5s;
+}
+
+.right-form textarea,
+.right-form textarea:focus,
+.right-form textarea:visited{
+    resize: none;
+    box-shadow: none;
+    opacity: 0.4;
+    margin-bottom: 24px;
+    font-size: 18px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid rgb(31, 134, 197);
+    transition: all ease 0.5s;
+}
+.left-form input:focus,.right-form textarea:focus{
+    opacity: 1;
+}
+.right-form .btn,
+.right-form .btn:focus,
+.right-form .btn:visited{
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid rgb(31, 134, 197);
+    font-size: 18px;
+    padding: 10px 0px;
+    transition: all ease 0.5s;
+}
+.right-form .btn:hover{
+    background-color: rgb(18, 156, 243);
+    color: #fff;
+}
+.social-icons ul{
+    list-style: none;
+    text-align: center;
+}
+.social-icons ul li{
+    display: inline;
+}
+.social-icons ul li a{
+    display: inline-block;
+    padding: 8px 10px;
+    border: 1px solid rgb(31, 134, 197);
+    margin: 6px;
+    text-decoration: none;
+    transition: all ease-in 0.5s;
+}
+.social-icons ul li a:hover{
+    background: rgb(31, 134, 197);
+    color: #fff;
+}
+.social-icons i{
+    font-size: 25px;
+}
+/* Footer Section */
+.footer-section{
+    background-color:#2f3640;
+    color: #fff;
+    padding: 10px 0px;
+}
+.footer-section .copyright a{
+    color: rgb(31, 134, 197);
+    cursor: pointer;
+}
+.footer-section .scroll-up{
+    text-align: right;
+}
+.footer-section .scroll-up a{
+    padding: 10px 14px;
+    background-color: rgb(18, 156, 243);
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 20px;
 }
