@@ -1,3 +1,28 @@
+/* Utility-classes */
+.padding{
+    padding-top:3rem ;
+    padding-bottom: 3rem;
+}
+.heading{
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.heading::after{
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 1px;
+    padding: 0 auto;
+    background-color: rgb(18, 156, 243);
+    bottom: -10px;
+    left: 50%;
+    margin-left: -50px;
+}
 /* Header Section */
 .header{
     background: url("../images/header-bg.jpg");
@@ -14,9 +39,9 @@
     padding: 50px 30px;
 }
 .header-text h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 300;
-    line-height: 3.5rem;
+    line-height: 3rem;
     text-transform: uppercase;
 }
 .header-text p{
@@ -64,4 +89,119 @@
     width: 100%;
     height: 500px;
     object-fit: contain;
+}
+
+/* About Section */
+.about-row{
+    margin-bottom: 4rem;
+}
+.about-row p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.about-iphone img{ 
+    margin-top: 30px;
+}
+.why-choose {
+    padding-bottom: 30px;
+}
+.why-choose h3{
+    position: relative;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.why-choose h3::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: rgb(18, 156, 243);
+    bottom: -10px;
+    left: 0;
+}
+.why-choose p{
+    font-weight: 400;
+    font-size: 18px;
+}
+.about-us-item{
+    padding: 7px 0;
+}
+.about-us-item h3{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.about-us-item span{
+    margin-bottom: 10px;
+    font-size: 52px;
+    margin-right: 16px;
+    color: rgb(31, 134, 197);
+}
+.about-us-item p{
+    font-weight: 400;
+    font-size: 16px;
+}
+/* Team Section */
+.team{
+    background: url('../images/testimonial-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.team-overlay{
+    background: rgba(0,0,0,0.6);
+}
+.team .heading::after{
+    margin-left: -57px;
+}
+.carousel-item img{
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 4px solid rgb(18, 156, 243);
+    margin: 30px 0 50px 0;
+}
+.team-caption h2{
+    font-weight: 700;
+    color: rgb(18, 156, 243);
+}
+.team-caption h5{
+    font-weight: 500;
+    font-size: 18px;
+    font-style: italic;
+}
+.team-caption p{
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 23px;
+}
+.team-caption p span{
+    font-size: 26px;
+    font-weight:bold;
+}
+.carousel-indicators{
+   bottom: -50px;
+}
+
+/* Services Section */
+.services .heading::after{
+    margin-left: -68px;
+}
+.services-content{
+    margin-top: 50px;
+}
+.service-left-box,.service-right-box{
+    margin-bottom: 20px;
+}
+.service-left-box span,.service-right-box span{
+    font-size: 40px;
+    color: rgb(31, 134, 197);
+    margin: 10px;
+}
+.service-left-box h2,.service-right-box h2{
+    font-weight: 450;
+}
+.service-left-box p, .service-right-box p{
+    font-weight: 400;
+    font-size: 16px;
 }
